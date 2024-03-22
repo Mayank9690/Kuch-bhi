@@ -44,7 +44,7 @@ var callback = () => api.sendMessage({body:`🌹𝙰𝙳𝙼𝙸𝙽 𝙰𝙽�
 
 ⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
 
-✅Thanks for using My Bot ❤ ${global.config.BOTNAME} 🖤
+✅Thanks for using My Bot ❤ ${global.config.Botname} 🖤
 
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/juswa.jpg")).on("close",() => callback());
